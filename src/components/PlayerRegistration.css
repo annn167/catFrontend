@@ -1,0 +1,206 @@
+@import url('https://fonts.gooleapis.com/css2?family=pacifico&display=swap');
+body { box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.friendbtn{
+  font-family: "Skranji", cursive;
+  background: radial-gradient(#fffbf3, #ffe19e);
+  border-radius: 20px 18px 20px 18px;
+
+}
+.addfriendbtn{
+  font-family: "Skranji", cursive;
+  background: radial-gradient(#fffbf3,brown);
+  border-radius: 20px 18px 20px 18px;
+
+}
+
+
+.text-center {
+  background-size: 2000px 2000px;
+  background: conic-gradient(brown, black, rgb(27, 227, 234),yellow)
+  ;
+  background-clip: text;
+  font-size: 100px;
+  font-family: cursive;
+  font-weight: bold;
+  text-align: center; /* Center align the text */
+  transform: skewY(-10deg) scaleY(1.5) skewX(-10deg); /* Skew the text along the Y-axis and stretch it vertically */
+  margin-top: 30px; /* Add some top margin for spacing */
+  padding-bottom: 5px; /* Add some bottom padding for spacing */
+  left: 50%;
+  top: 40%;
+  color:transparent;
+  
+  
+ 
+  width: 100vh;
+
+}  
+
+.container {
+  background-size: cover;
+  background-image: url('../images/download.jpg');
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 10%;
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+  background-position: center;
+}
+.container1 {
+  background-size: 100% 100%; /* Stretch the background image to cover the entire container */
+  background-image: url('../images/download.jpg');
+  position: fixed;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.col-sm-6{font-family: "Skranji", cursive;
+  background: radial-gradient(#fffbf3, #ffe19e);
+   padding: 25px; 
+   box-sizing:content-box;
+  border-radius: 20px 18px 20px 18px; box-shadow: Opx Opx Opx 6px #5e1e21,
+  0px 0px 8px
+  6px #84222b,
+  inset 0px 0px 15px 0px #614506, 6px 6px 1px 1px #e66565,
+  -6px 6px 1px 1px #e66565;
+  text-align:center;
+  height: 200px;
+  left:30%;
+  top:50%;
+  position: absolute;
+ }
+ .col-sm-6 p{
+  font-size: 56px; padding:
+40px;
+box-sizing: border-box; color: #461417;
+ }
+ .border{
+  font-family: "Skranji", cursive;
+  background: radial-gradient(#fffbf3, #ffe19e);
+   padding: 25px; 
+   box-sizing: border-box;
+  border-radius: 20px 18px 20px 18px; box-shadow: Opx Opx Opx 6px #5e1e21,
+  0px 0px 8px
+  6px #84222b,
+  inset 0px 0px 15px 0px #614506, 6px 6px 1px 1px #e66565,
+  -6px 6px 1px 1px #e66565;
+  text-align:center;
+  height: 600px;
+  left:30%;
+  top:10%;
+  position: absolute;
+}
+.border{
+  font-size: 56px; padding:
+20px;
+box-sizing: border-box; color: #461417;
+ }
+ 
+ 
+.addContainer {
+  position: fixed;
+  left:50%;
+  top:50%;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {padding: 20px;
+  border-radius: 20px; border: 2px solid #49181e; font-family: "Skranji", cursive;
+  color:#fff;
+  font-size: 32px; text-shadow:
+  1px 2px 3px #000000;
+  cursor:pointer; }
+
+h1 {
+  color: black;
+  padding-top: 0%;
+}
+
+
+
+.addContainer form label {
+  font-size: 18px;
+}
+
+.addContainer form input {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.addContainer1 form input {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.tableContainer table thead tr th,
+.tableContainer table tbody tr td {
+  min-width: 200px;
+  text-align: center;
+  padding: 8px;
+}
+.tableContainer1 table thead tr th,
+.tableContainer1 table tbody tr td {
+  min-width: 200px;
+  text-align: center;
+  padding: 8px;
+}
+
+.btn-edit,
+.btn-delete {
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+}
+
+.btn-edit {
+  background-color: skyblue;
+}
+
+.btn-delete {
+  background-color: red;
+  color: white;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .addContainer form {
+    width: 80%; /* Adjust the width for smaller screens */
+    padding: 30px 20px; /* Adjust the padding */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h2 {
+    font-size: large; /* Adjust font size for smaller screens */
+  }
+
+
+}
+@media only screen and (max-width: 768px) {
+  .addContainer1 form {
+    width: 80%; /* Adjust the width for smaller screens */
+    padding: 30px 20px; /* Adjust the padding */
+  }}
+
+@media screen and (max-width: 600px) {
+  .container1 {
+    padding: 10px;
+  }
+}
+
