@@ -4,6 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import { register, handleForgotPassword, handleSecurityQnA,handleSetNewPassword   } from "../../controllers/PlayerController";
 import Layout from "../Layout";
 import { Form, Button, Alert, Modal } from "react-bootstrap";
+import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
 /**
  * Component for user login with form and authentication.
@@ -22,6 +23,7 @@ const Login = () => {
   const [showSetPasswordModal, setShowSetPasswordModal] = useState(false);
   const [newPassword, setNewPassword] = useState("");
   const [confirmNewPassword, setConfirmNewPassword] = useState("");
+  const [visible, setVisible] = useState(true);
   const { login } = useAuth();
   const navigate = useNavigate();
 
@@ -43,11 +45,11 @@ const Login = () => {
       const errorMessage = error.response
         ? error.response.data.message ||
           error.response.statusText ||
-          "Unknown error"
+          "incorrect username or password"
         : error.request
         ? "No response from server. Check network connection."
         : "Error setting up login request.";
-      console.error("Login error details:", error);
+      console.error("incorrect username or password", error);
       setError(`Login failed: ${errorMessage}`);
     }
   };
@@ -142,12 +144,15 @@ const handleSetPassword = async (event) => {
               </Form.Group>
               <Form.Group className="mb-3" controlId="password">
                 <Form.Control
-                  type="password"
+                  type={visible ? "password" : "text"}
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
                 />
+                 <button className="btn btn-outline-secondary" type="button" onClick={() => setVisible(!visible)}>
+                    {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+                  </button>
               </Form.Group>
               <Button type="submit" className="btn btn-primary btn-block">
                 Login
